@@ -1,0 +1,18 @@
+import java.util.Scanner; // Importamos la clase Scanner para leer datos del usuario
+
+public class Saludo {
+    public static void main(String[] args) {
+        // Crear un objeto Scanner para leer la entrada del usuario
+        Scanner scanner = new Scanner(System.in);
+
+        // Pedir al usuario su nombre
+        System.out.print("Por favor, ingresa tu nombre: ");
+        String nombre = scanner.nextLine(); // Leer la entrada del usuario
+
+        // Saludar al usuario
+        System.out.println("¡Hola, " + nombre + "! Bienvenido a Java.");
+
+        // Cerrar el objeto Scanner
+        scanner.close();
+    }
+}
